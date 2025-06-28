@@ -32,15 +32,22 @@
       margin: 0 auto;
     }
     .video-section {
-      display: flex;
-      justify-content: center;
+      text-align: center;
       padding: 20px;
     }
-    iframe {
+    .channel-box {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .subscribe-button {
+      margin-top: 10px;
+    }
+    .subscribe-button iframe {
+      height: 105px;
+      width: 300px;
       border: none;
-      width: 90%;
-      max-width: 560px;
-      height: 315px;
     }
     footer {
       text-align: center;
@@ -66,15 +73,18 @@
   </section>
 
   <section class="video-section">
-    <!-- Replace VIDEO_ID with your actual YouTube video ID -->
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video"></iframe>
+    <div class="channel-box">
+      <h3>Subscribe to My Channel</h3>
+      <div class="subscribe-button">
+        <iframe src="https://www.youtube.com/subscribe_embed?usegapi=1&channel=UCg4It1Wj0KNQH7hQ00vMhxg" title="Subscribe to Science Universe YT"></iframe>
+      </div>
+      <p><a href="https://www.youtube.com/@scienceeuniverse" target="_blank">Visit Channel</a></p>
+    </div>
   </section>
 
   <footer>
     <p>Connect with me: 
       <a href="https://www.youtube.com/@scienceeuniverse" target="_blank">YouTube</a> |
-      <iframe src="https://www.youtube.com/embed/abcDEF1234" title="YouTube video"></iframe>
-
       <a href="mailto:daxkadia2285@gmail.com">Email</a>
     </p>
     <p>&copy; 2025 Science Universe YT</p>
